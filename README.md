@@ -63,9 +63,8 @@ In terms of architecture, it must consist of microservices (resulting in a relat
 
 
 ### Backend 🕸️
-- **NodeJS** - A server-side JavaScript runtime.
-- **Express** - A minimal and flexible Node.js web application framework.
-- **pdfkit** - A JavaScript library for generating PDF documents
+- **NodeJS**
+- **Express**
 
 ### CMS ⚙️
 - **Contentful** - A headless Content Management System (CMS) that allows you to manage and deliver digital content across various platforms.
@@ -74,13 +73,13 @@ In terms of architecture, it must consist of microservices (resulting in a relat
 - **Commercetools** - A modern and flexible headless commerce platform, providing APIs for building scalable and customizable ecommerce solutions. It was used as database for all products and orders.
 
 ### Mail service ✉️
-- **Nodemailer** - A powerful and easy-to-use Node.js module for sending emails, enabling seamless integration of email services in applications.
+- **Nodemailer** 
 
 ### Payment 💵
-- **Stripe** -A payment processing platform, facilitating secure and efficient online transactions.
+- **Stripe**
 
 ### DevOps 🐟
-- **Docker** - Enables streamlined deployment by encapsulating microservices and the API gateway in portable containers, allowing for simultaneous and efficient start-up.
+- **Docker**
 
 ### API gateway 🛜
 - **Kong** - An open-source API gateway that manages, secures, and scales API requests, providing a centralized point for controlling and monitoring API traffic.
