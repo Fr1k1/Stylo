@@ -59,13 +59,8 @@ In terms of architecture, it must consist of microservices (resulting in a relat
 ## Technologies
 
 ### Frontend 🎭
-- **React** - A  JavaScript library for building user interfaces
-- **react-loader-spinner** - A lightweight spinner component for React applications
-- **react-responsive-carousel** - A responsive carousel component for React applications
-- **react-toastify** - A React notification library providing customizable toast messages
-- **sweetalert2** - A customizable and responsive modal library for React applications
-- **yup** - A schema validation library for JavaScript objects
-- **emailjs** - A library for sending emails in JavaScript applications
+- **React** 
+
 
 ### Backend 🕸️
 - **NodeJS** - A server-side JavaScript runtime.
@@ -90,51 +85,6 @@ In terms of architecture, it must consist of microservices (resulting in a relat
 ### API gateway 🛜
 - **Kong** - An open-source API gateway that manages, secures, and scales API requests, providing a centralized point for controlling and monitoring API traffic.
 The API gateway acts as a middleware connecting the frontend and backend. Its primary role is to route traffic to designated microservices, handling authentication and rate limitation to free up microservices for core business logic. Deployment in Docker and maintaining a dedicated repository are recommended practices.
-
-<div id="mach"></div>
-
-## MACH Architecture in context of our project
-
-This architectural framework is built upon the foundation of multiple independent microservices.
-
-The "M" in this context signifies microservices, highlighting the decentralized nature of the system.
-
-The "A" represents the commitment to an API-first approach. This dictates that our application should be conceived with a focus on the APIs our services need to provide, as opposed to developing functionality first and subsequently creating APIs.
-
-The "C" denotes Cloud native, emphasizing the need to leverage the full spectrum of benefits offered by cloud infrastructure. The goal is to design the application to operate seamlessly on any cloud, making it inherently Cloud Agnostic and independent of specific cloud provider technologies.
-
-The "H" stands for "Headless".  Iteans decoupling the backend (microservices) from the frontend. It allows flexibility by separating the presentation layer, enabling various frontends to access the same backend services without being tied to a specific format.
-
-<div id="arch"></div>
-
-## Architecture and microservices
-
-Application is composed of 2 parts:
-<ul>
-  <li> Web app frontend: the main UI of the app</li>
-   <li> Backend: which contains 4 microservices</li>
-</ul>
-
-The backend comprises four interconnected microservices, facilitated by an API gateway such as Kong. The microservices include:
-<ul>
-  <li>    Products - integrates data from our headless Ecommerce and CMS APIs (products, product details, categories, webshop and homepage layout)</li>
-  <li>    Receipts -  includes creation of PDF receipt which are meant to be sent to customers</li>
-   <li>   Emails - used for sending mails to customers (account verfication, receiving a PDF invoice on email)</li>
-   <li>   Customers - customer registration and login</li>
-</ul>
-
-
-Overall structure of the entire Stylo application:
-
-![structure](https://github.com/CroAnna/Stylo/assets/90924342/379689d5-070c-41a6-bbcf-53a7bab82ac9)
-
-
-Frontend component diagram:
-
-![compo](https://github.com/CroAnna/Stylo/assets/90924342/bb14dbdc-0632-4362-927e-06c377aa6696)
-
-
-<div id="ui"></div>
 
 ## Stylo UI
 
